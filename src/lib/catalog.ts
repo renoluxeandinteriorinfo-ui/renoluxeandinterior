@@ -1,36 +1,39 @@
-import goldcurl from "@/assets/goldcurl-ornaments.jpg.asset.json";
-import acrylic from "@/assets/acrylic-wall-sculpture.jpg.asset.json";
-import standingLamps from "@/assets/standing-lamps.jpg.asset.json";
-import centerTables from "@/assets/center-tables.jpg.asset.json";
-import centerTables2 from "@/assets/center-tables-2.jpg.asset.json";
-import sideStool from "@/assets/side-stool.jpg.asset.json";
-import tripod from "@/assets/tripod-flame-aroma.jpg.asset.json";
-import figurines from "@/assets/figurines.jpg.asset.json";
-import figurines2 from "@/assets/figurines-2.jpg.asset.json";
-import foreignCouch from "@/assets/foreign-couch.jpg.asset.json";
-import fancyChairs from "@/assets/fancy-chairs.jpg.asset.json";
-import kaws from "@/assets/kaws.jpg.asset.json";
-import visualizationLamp from "@/assets/visualization-lamp.jpg.asset.json";
-import backMan from "@/assets/back-man-figurines.jpg.asset.json";
-import swingChairs from "@/assets/swing-chairs.jpg.asset.json";
-import frames from "@/assets/frames.jpg.asset.json";
-import plasticVase from "@/assets/plastic-vase-flowers.jpg.asset.json";
-import mirror from "@/assets/mirror.jpg.asset.json";
+// All imagery is served as plain public .jpg files from /images/*.jpg
+const img = (name: string) => `/images/${name}.jpg`;
 
-import viju1 from "@/assets/viju-1.jpg.asset.json";
-import viju2 from "@/assets/viju-2.jpg.asset.json";
-import viju3 from "@/assets/viju-3.jpg.asset.json";
-import viju4 from "@/assets/viju-4.jpg.asset.json";
+const goldcurl = { url: img("goldcurl-ornaments") };
+const acrylic = { url: img("acrylic-wall-sculpture") };
+const standingLamps = { url: img("standing-lamps") };
+const centerTables = { url: img("center-tables") };
+const centerTables2 = { url: img("center-tables-2") };
+const sideStool = { url: img("side-stool") };
+const tripod = { url: img("tripod-flame-aroma") };
+const figurines = { url: img("figurines") };
+const figurines2 = { url: img("figurines-2") };
+const foreignCouch = { url: img("foreign-couch") };
+const fancyChairs = { url: img("fancy-chairs") };
+const kaws = { url: img("kaws") };
+const visualizationLamp = { url: img("visualization-lamp") };
+const backMan = { url: img("back-man-figurines") };
+const swingChairs = { url: img("swing-chairs") };
+const frames = { url: img("frames") };
+const plasticVase = { url: img("plastic-vase-flowers") };
+const mirror = { url: img("mirror") };
 
-import heroCover from "@/assets/hero-cover.jpg.asset.json";
-import brandPoster from "@/assets/brand-poster.jpg.asset.json";
-import portfolioStrip from "@/assets/portfolio-strip.jpg.asset.json";
-import logo from "@/assets/reno-luxe-logo.jpg.asset.json";
+const viju1 = { url: img("viju-1") };
+const viju2 = { url: img("viju-2") };
+const viju3 = { url: img("viju-3") };
+const viju4 = { url: img("viju-4") };
 
-import sceneLiving from "@/assets/scene-living.jpg";
-import sceneBedroom from "@/assets/scene-bedroom.jpg";
-import sceneOffice from "@/assets/scene-office.jpg";
-import sceneRetail from "@/assets/scene-retail.jpg";
+const heroCover = { url: img("hero-cover") };
+const brandPoster = { url: img("brand-poster") };
+const portfolioStrip = { url: img("portfolio-strip") };
+const logo = { url: img("reno-luxe-logo") };
+
+const sceneLiving = img("scene-living");
+const sceneBedroom = img("scene-bedroom");
+const sceneOffice = img("scene-office");
+const sceneRetail = img("scene-retail");
 
 export const BRAND_IMAGES = {
   logo: logo.url,
@@ -44,6 +47,7 @@ export const BRAND_IMAGES = {
     retail: sceneRetail,
   },
 };
+
 
 export type Product = {
   slug: string;
